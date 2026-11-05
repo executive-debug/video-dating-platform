@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Light, Indeed-inspired tokens: white surfaces, neutral greys, subtle blue accent. */
+:root {
+  --background: #ffffff;
+  --foreground: #2d2d2d;
+  --muted: #f3f2f1;
+  --muted-foreground: #595959;
+  --border: #e4e2e0;
+  --primary: #2557a7;
+  --primary-hover: #1d4686;
+  --primary-soft: #eaf1fb;
+  --primary-foreground: #ffffff;
+  --success: #0e7a3b;
+  --danger: #b3261e;
+  --ring: #2557a7;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-soft: var(--primary-soft);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-ring: var(--ring);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --radius-card: 0.5rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
